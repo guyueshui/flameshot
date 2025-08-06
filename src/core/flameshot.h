@@ -19,6 +19,14 @@ class UploadHistory;
 class QHotkey;
 #endif
 
+enum ErrCode : uint8_t
+{
+    E_OK = 0,
+    E_GENERAL,
+    E_ABORTED,
+    E_DBUSCONN,
+};
+
 class Flameshot : public QObject
 {
     Q_OBJECT
