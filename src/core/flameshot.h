@@ -25,6 +25,9 @@ enum ErrCode : uint8_t
     E_GENERAL,
     E_ABORTED,
     E_DBUSCONN,
+    E_SIG_BASE = 128,
+    E_SIGINT = E_SIG_BASE + 2,
+    E_SIGTERM = E_SIG_BASE + 15,
 };
 
 class Flameshot : public QObject
